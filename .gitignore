@@ -1,0 +1,4 @@
+contracts/gift_nft/build/
+contracts/gift_nft/Published.toml
+dist/
+.DS_Store

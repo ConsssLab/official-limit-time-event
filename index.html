@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>ConSSS Wars · 官方限時活動 | Echoes of Chainoa 鏈州英雄傳</title>
+<meta name="description" content="ConSSS Wars: Echoes of Chainoa 鏈州英雄傳 官方限時活動 — 開啟寶箱，鑄造你的第一份禮物 NFT（Sui 鏈）。" />
+<meta property="og:title" content="ConSSS Wars · 官方限時活動" />
+<meta property="og:description" content="開啟寶箱，鑄造 ConSSS Wars - 1st Gift NFT（Sui Testnet）。" />
+<meta property="og:image" content="https://raw.githubusercontent.com/ConsssLabs/public-assets/main/consss-first-gift/consss-1st-gift.png" />
+<link rel="icon" href="consss_1st_gift.webp" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700;900&family=Noto+Serif+TC:wght@500;700;900&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<!-- decorative painterly fog layers -->
+<div class="bg-veil"></div>
+<div class="bg-glow"></div>
+
+<header class="nav">
+  <a class="brand" href="#top">
+    <span class="brand-mark">⚔</span>
+    <span class="brand-text">ConSSS&nbsp;Wars</span>
+  </a>
+  <nav class="nav-links">
+    <a href="https://conssswars.com/" target="_blank" rel="noopener">官網</a>
+    <a href="https://x.com/conssswars" target="_blank" rel="noopener">X</a>
+    <a href="https://discord.com/invite/GyrfKEADaG" target="_blank" rel="noopener">Discord</a>
+  </nav>
+  <button id="walletBtn" class="btn btn-wallet">連接錢包</button>
+</header>
+
+<main id="top">
+
+  <section class="hero">
+    <p class="kicker">OFFICIAL LIMITED-TIME EVENT · 官方限時活動</p>
+    <h1 class="title">Echoes of Chainoa<span class="title-zh">鏈州英雄傳</span></h1>
+    <p class="lede">
+      這是遊戲 <strong>ConSSS Wars: Echoes of Chainoa 鏈州英雄傳</strong> 的官方限時活動。
+      鏈州的英雄們，十口古老寶箱已自海潮之中浮現 —— 開啟任意一箱，
+      於 <strong>Sui</strong> 鏈鑄造屬於你的 <strong>ConSSS Wars - 1st Gift</strong>。
+    </p>
+    <div class="hero-cta">
+      <a href="#chests" class="btn btn-primary">開啟寶箱 ▸</a>
+      <span class="net-pill">Sui · Testnet</span>
+    </div>
+  </section>
+
+  <section id="chests" class="chests">
+    <header class="section-head">
+      <h2>開啟寶箱 · Open a Treasure Chest</h2>
+      <p>按下任一寶箱，喚醒錢包並鑄造你的第一份禮物。每一箱皆通往同一份榮耀。</p>
+    </header>
+    <div id="chestGrid" class="chest-grid"><!-- chests injected by app.js --></div>
+  </section>
+
+  <section class="prize">
+    <div class="prize-card">
+      <div class="prize-art">
+        <img src="consss_1st_gift.webp" alt="ConSSS Wars - 1st Gift NFT" />
+      </div>
+      <div class="prize-info">
+        <p class="kicker">EVENT REWARD · 活動獎勵</p>
+        <h2>ConSSS Wars - 1st Gift</h2>
+        <p>
+          鏈州的第一份禮物。鎏金祥雲與海潮紋路鐫刻於玄藍箱身之上，
+          封存著英雄傳說的序章。於 Sui 鏈鑄造後，將永久歸於你的錢包。
+        </p>
+        <ul class="meta-list">
+          <li><span>鏈</span><b>Sui Testnet</b></li>
+          <li><span>標準</span><b>Sui Object NFT (Display)</b></li>
+          <li><span>鑄造費</span><b>僅 Gas（無價格）</b></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="footer-brand">ConSSS Wars: Echoes of Chainoa · 鏈州英雄傳</div>
+  <nav class="footer-links">
+    <a href="https://conssswars.com/" target="_blank" rel="noopener">官網</a>
+    <a href="https://x.com/conssswars" target="_blank" rel="noopener">X</a>
+    <a href="https://discord.com/invite/GyrfKEADaG" target="_blank" rel="noopener">Discord</a>
+  </nav>
+  <p class="footer-fine">官方限時活動 · Built on Sui · © ConSSS Labs</p>
+</footer>
+
+<!-- Mint result modal -->
+<div id="modal" class="modal" hidden>
+  <div class="modal-card">
+    <button id="modalClose" class="modal-close" aria-label="close">✕</button>
+    <div id="modalBody"><!-- filled by app.js --></div>
+  </div>
+</div>
+
+<!-- toast region -->
+<div id="toast" class="toast" hidden></div>
+
+<script type="module" src="app.js"></script>
+</body>
+</html>

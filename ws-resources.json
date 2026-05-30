@@ -1,0 +1,6 @@
+{
+  "site_name": "ConSSS Wars — Official Limited-Time Event",
+  "routes": {
+    "/*": "/index.html"
+  }
+}

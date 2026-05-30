@@ -1,0 +1,15 @@
+{
+  "network": "testnet",
+  "package": "0xff60f6d21f898320e5d81109080ad4d454004726fbfd7b6abd1d51da2622fd30",
+  "module": "gift",
+  "mintFunction": "mint",
+  "mintCounter": "0x3ac47386a7a2080952d21b7ddcf274ca0c0a82165149552d8d29127f1ad3afaa",
+  "upgradeCap": "0x1e149b9feef6df6282adb64ff30c60d5f7e1bc89ffcf1206ffc2776ddf427f66",
+  "publisher": "0x29ac79e290c2b392720f2f7b46bf5e775945c13a093e16bba13f2fab087bc9a5",
+  "display": "0x309b5e1a9ecb9c4fbd84f4307383525d6a5b543c4db5e52eccc7ede5f85d378d",
+  "publishDigest": "F6ZzPb3trUrp7RN75RvszaMQqWMooYLWjvB4VQq4sx4t",
+  "deployer": "0x285b0021863629b449109da710cee9969354a181a426781da74b510ea1d018d9",
+  "nftName": "ConSSS Wars - 1st Gift",
+  "imageUrl": "https://raw.githubusercontent.com/ConsssLabs/public-assets/main/consss-first-gift/consss-1st-gift.png",
+  "supersedes": "0xde9556850ad5f4cbd38a5df1a64ce9baeeebcc1ce0320d96bbce1ceebbc9aeb5"
+}
