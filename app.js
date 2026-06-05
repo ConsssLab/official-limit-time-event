@@ -1,4 +1,4 @@
-// ConSSS Wars — Echoes of Chainoa: Whispers of the Chain · Official limited-time event
+// ConSSS Wars: Echoes of Chainoa · Official limited-time event
 // Wallet connect + on-chain mint of "ConSSS Wars - 1st Gift" on Sui.
 //
 // Eligibility (enforced on-chain by event_01_gift::mint): the connected wallet
@@ -88,7 +88,7 @@ const STR = {
     "nav.site": "Site",
     "wallet.connect": "Connect Wallet",
     "hero.kicker": "Official Limited-Time Event",
-    "hero.lede": "The official limited-time event for 《Echoes of Chainoa: Whispers of the Chain》. Heroes who personally clear all three battles can claim their own ConSSS Wars - 1st Gift on Sui. One mint per wallet.",
+    "hero.lede": "The official limited-time event for 《ConSSS Wars: Echoes of Chainoa》. Heroes who personally clear all three battles can claim their own ConSSS Wars - 1st Gift on Sui. One mint per wallet.",
     "reward.kicker": "Event Reward",
     "reward.desc": "The first gift of Chainoa — granted only to heroes who personally cleared battles 1, 2 and 3. Once minted on Sui, it's yours forever.",
     "check.b1": "Battle 1 Chronicle",
