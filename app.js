@@ -12,7 +12,7 @@ import { SuiClient, getFullnodeUrl } from "https://esm.sh/@mysten/sui@1.30.4/cli
 // ---- on-chain config -------------------------------------------------------
 // Flip NETWORK to "mainnet" AFTER the mainnet contract launch and fill the
 // mainnet ids below. Everything else (net pill, RPC, chain) derives from this.
-const NETWORK = "testnet";
+const NETWORK = "mainnet";
 const NETWORKS = {
   testnet: {
     chain: "sui:testnet",
@@ -22,9 +22,9 @@ const NETWORKS = {
   },
   mainnet: {
     chain: "sui:mainnet",
-    giftPackageId: "0x0_REPLACE_AFTER_MAINNET_DEPLOY",
-    mintCounter: "0x0_REPLACE_AFTER_MAINNET_DEPLOY",
-    chroniclePackageId: "0x0_REPLACE_AFTER_MAINNET_DEPLOY",
+    giftPackageId: "0xd1ed457cb4f1bb209c09a094f772472db15c115a29eb5995b7cb2a2313227896",
+    mintCounter: "0x7c15f5391cd1baf53bc3280ac3f75331c5abe027a370eedb39ac9d7f301890a9",
+    chroniclePackageId: "0x5760b2685d41bd45e2991dedc242e866b1aca9ff3c3a5e193445751c2b8dfe4b",
   },
 };
 const CFG = {
