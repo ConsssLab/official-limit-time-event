@@ -247,3 +247,21 @@ main,header,footer{position:relative;z-index:1}
   font-size:15px;box-shadow:0 12px 40px rgba(0,0,0,.5);max-width:90vw}
 .toast[hidden]{display:none}
 .toast.err{border-color:rgba(255,120,120,.5);color:#ffcaca}
+
+/* ---------- limited-event claim (eligibility checklist + powered-by) ---------- */
+.checklist{list-style:none;padding:0;margin:18px 0 10px;display:grid;gap:8px}
+.checklist li{display:flex;align-items:center;gap:10px;font-weight:700;
+  color:var(--text);opacity:.55;transition:opacity .2s,color .2s}
+.checklist li .mark{display:inline-grid;place-items:center;width:24px;height:24px;
+  border-radius:50%;border:1px solid rgba(255,255,255,.18);font-size:14px;flex:0 0 auto}
+.checklist li.done{opacity:1;color:var(--gold-soft)}
+.checklist li.done .mark{border-color:var(--gold-soft);background:rgba(217,178,90,.14);color:var(--gold-soft)}
+.claim-status{margin:6px 0 14px;color:var(--text);opacity:.85;font-size:.95rem}
+.claim-status a{color:var(--gold-soft)}
+.claim-btn{width:100%;justify-content:center}
+.claim-btn:disabled{opacity:.5;cursor:not-allowed;filter:grayscale(.3)}
+.powered{text-align:center;padding:46px 20px 10px}
+.powered .kicker{margin-bottom:16px}
+.powered-logos{display:flex;gap:38px;align-items:center;justify-content:center;flex-wrap:wrap}
+.powered-logos img{height:50px;width:auto;opacity:.92}
+@media(max-width:560px){.powered-logos img{height:38px}.powered-logos{gap:26px}}

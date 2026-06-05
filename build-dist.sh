@@ -8,7 +8,8 @@ mkdir -p dist/chests
 
 cp index.html styles.css app.js ws-resources.json dist/
 cp consss_1st_gift.webp dist/
-cp chests/*.webp dist/chests/
+# chests/ now holds the powered-by logos (Tatum.png, Walrus.png), not chest tiles.
+cp chests/*.png dist/chests/
 
 echo "dist/ built:"
 du -sh dist

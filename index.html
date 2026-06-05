@@ -7,7 +7,7 @@
 <meta name="description" content="ConSSS Wars: Echoes of Chainoa 鏈州英雄傳 官方限時活動 — 開啟寶箱，鑄造你的第一份禮物 NFT（Sui 鏈）。" />
 <meta property="og:title" content="ConSSS Wars · 官方限時活動" />
 <meta property="og:description" content="開啟寶箱，鑄造 ConSSS Wars - 1st Gift NFT（Sui Testnet）。" />
-<meta property="og:image" content="https://raw.githubusercontent.com/ConsssLabs/public-assets/main/consss-first-gift/consss-1st-gift.png" />
+<meta property="og:image" content="https://raw.githubusercontent.com/ConsssLab/public-assets/main/consss-first-gift/consss-1st-gift.png" />
 <link rel="icon" href="consss_1st_gift.webp" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -40,24 +40,16 @@
     <h1 class="title">Echoes of Chainoa<span class="title-zh">鏈州英雄傳</span></h1>
     <p class="lede">
       這是遊戲 <strong>ConSSS Wars: Echoes of Chainoa 鏈州英雄傳</strong> 的官方限時活動。
-      鏈州的英雄們，十口古老寶箱已自海潮之中浮現 —— 開啟任意一箱，
-      於 <strong>Sui</strong> 鏈鑄造屬於你的 <strong>ConSSS Wars - 1st Gift</strong>。
+      凡親手打通三場戰役的英雄，皆可於 <strong>Sui</strong> 鏈領取專屬的
+      <strong>ConSSS Wars - 1st Gift</strong>。每個錢包限領一次。
     </p>
     <div class="hero-cta">
-      <a href="#chests" class="btn btn-primary">開啟寶箱 ▸</a>
+      <a href="#claim" class="btn btn-primary">領取禮物 ▸</a>
       <span class="net-pill">Sui · Testnet</span>
     </div>
   </section>
 
-  <section id="chests" class="chests">
-    <header class="section-head">
-      <h2>開啟寶箱 · Open a Treasure Chest</h2>
-      <p>按下任一寶箱，喚醒錢包並鑄造你的第一份禮物。每一箱皆通往同一份榮耀。</p>
-    </header>
-    <div id="chestGrid" class="chest-grid"><!-- chests injected by app.js --></div>
-  </section>
-
-  <section class="prize">
+  <section id="claim" class="prize">
     <div class="prize-card">
       <div class="prize-art">
         <img src="consss_1st_gift.webp" alt="ConSSS Wars - 1st Gift NFT" />
@@ -66,15 +58,32 @@
         <p class="kicker">EVENT REWARD · 活動獎勵</p>
         <h2>ConSSS Wars - 1st Gift</h2>
         <p>
-          鏈州的第一份禮物。鎏金祥雲與海潮紋路鐫刻於玄藍箱身之上，
-          封存著英雄傳說的序章。於 Sui 鏈鑄造後，將永久歸於你的錢包。
+          鏈州的第一份禮物。封存著英雄傳說的序章 ——
+          僅頒予親手打通戰役 1、2、3 的英雄。於 Sui 鏈鑄造後，將永久歸於你的錢包。
         </p>
+
+        <ul id="checklist" class="checklist">
+          <li data-battle="1"><span class="mark">○</span> 戰役一 Chronicle</li>
+          <li data-battle="2"><span class="mark">○</span> 戰役二 Chronicle</li>
+          <li data-battle="3"><span class="mark">○</span> 戰役三 Chronicle</li>
+        </ul>
+        <p id="claimStatus" class="claim-status">連接錢包以查詢領取資格。</p>
+        <button id="claimBtn" class="btn btn-primary claim-btn" disabled>連接錢包</button>
+
         <ul class="meta-list">
           <li><span>鏈</span><b>Sui Testnet</b></li>
-          <li><span>標準</span><b>Sui Object NFT (Display)</b></li>
-          <li><span>鑄造費</span><b>僅 Gas（無價格）</b></li>
+          <li><span>資格</span><b>持有戰役 1/2/3 Chronicle</b></li>
+          <li><span>鑄造費</span><b>僅 Gas（每錢包限一次）</b></li>
         </ul>
       </div>
+    </div>
+  </section>
+
+  <section class="powered">
+    <p class="kicker">POWERED BY</p>
+    <div class="powered-logos">
+      <img src="chests/Tatum.png" alt="Tatum" />
+      <img src="chests/Walrus.png" alt="Walrus" />
     </div>
   </section>
 
