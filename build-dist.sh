@@ -7,7 +7,8 @@ rm -rf dist
 mkdir -p dist/chests dist/assets/ui
 
 cp index.html styles.css app.js ws-resources.json dist/
-cp consss_1st_gift.webp dist/
+# NFT reveal image (shown on successful claim).
+cp consss_1st_gift.png dist/
 # Official Chainoa design system assets (shared with conssswars.com).
 cp assets/consss.png dist/assets/
 cp assets/ui/*.png dist/assets/ui/

@@ -1419,35 +1419,64 @@ html[lang="zh-Hant"] body {
   width: 100%;
 }
 .claim-card {
-  display: grid;
-  grid-template-columns: minmax(0, 300px) 1fr;
-  gap: clamp(1rem, 3vw, 2rem);
-  align-items: center;
-  padding: clamp(1.25rem, 3vw, 2rem);
-  max-width: 860px;
+  max-width: 620px;
   margin: 0 auto;
+  padding: clamp(1.5rem, 4vw, 2.25rem);
+  text-align: center;
 }
-.claim-art img {
-  width: 100%;
-  border-radius: 10px;
-  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.45);
-}
-.claim-info h2 {
+.claim-card h2 {
   font-family: var(--font-serif);
   font-size: clamp(1.4rem, 3vw, 1.9rem);
   margin: 0.1rem 0 0.5rem;
   color: var(--text);
 }
-.claim-info > p {
+.reward-desc {
   color: var(--text-muted);
   margin: 0 0 0.75rem;
+}
+.chest-prompt {
+  color: var(--text-muted);
+  margin: 1.1rem 0 0.85rem;
+  font-size: 0.92rem;
+}
+.chest-row {
+  display: flex;
+  gap: clamp(1rem, 5vw, 2.5rem);
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.chest {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.4rem;
+  border-radius: 14px;
+  transition: transform 0.15s, filter 0.15s;
+}
+.chest img {
+  width: clamp(120px, 32vw, 175px);
+  height: auto;
+  display: block;
+  filter: drop-shadow(0 8px 24px rgba(0, 0, 0, 0.45));
+}
+.chest:hover {
+  transform: translateY(-4px) scale(1.03);
+}
+.chest:active {
+  transform: scale(0.98);
+}
+.chest-row.locked .chest {
+  filter: grayscale(0.55) brightness(0.8);
+  opacity: 0.7;
 }
 .checklist {
   list-style: none;
   padding: 0;
-  margin: 1rem 0 0.75rem;
+  margin: 1rem auto 0.75rem;
+  width: fit-content;
   display: grid;
   gap: 8px;
+  text-align: left;
 }
 .checklist li {
   display: flex;
